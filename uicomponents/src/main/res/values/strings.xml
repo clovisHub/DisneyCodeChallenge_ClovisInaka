@@ -1,0 +1,7 @@
+<resources>
+    <string name="title_activity_components">ComponentsActivity</string>
+    <string name="error_title">Error</string>
+    <string name="error_message">Something went wrong</string>
+    <string name="error_reservation_needed">Reservation Needed</string>
+    <string name="error_select_at_least">Select at least one Guest that has a reservation to continue.</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clovis.uicomponents">
+
+    <application>
+        <activity
+            android:name=".ComponentsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_components"
+            android:theme="@style/Theme.DisneyCodeChallenge_ClovisInaka" />
+    </application>
+
+</manifest>
