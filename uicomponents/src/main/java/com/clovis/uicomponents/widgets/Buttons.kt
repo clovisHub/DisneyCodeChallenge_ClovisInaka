@@ -1,10 +1,8 @@
 package com.clovis.uicomponents.widgets
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.foundation.layout.defaultMinSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -12,6 +10,7 @@ import androidx.compose.material3.ButtonElevation
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
@@ -119,23 +118,28 @@ fun ButtonWith44by343Rounded(
     onClick: () -> Unit
 ) {
 
-    CreateButton(
-        UIButtonsObject(
-            text = text,
-            modifier = modifier
-                .padding(16.dp, 16.dp, 16.dp, 34.dp)
-                .size(343.dp, 44.dp),
-            enabled = enabled,
-            shape = RoundedCornerShape(22.dp),
-            elevation = ButtonDefaults.buttonElevation(
-                defaultElevation = 0.dp,
-                pressedElevation = 0.dp,
-                disabledElevation = 0.dp
+    Column(Modifier
+        .fillMaxSize(),
+         horizontalAlignment = Alignment.CenterHorizontally,
+         verticalArrangement = Arrangement.Center) {
+        CreateButton(
+            UIButtonsObject(
+                text = text,
+                modifier = modifier
+                    .padding(16.dp, 16.dp, 16.dp, 34.dp)
+                    .size(343.dp, 44.dp),
+                enabled = enabled,
+                shape = RoundedCornerShape(22.dp),
+                elevation = ButtonDefaults.buttonElevation(
+                    defaultElevation = 0.dp,
+                    pressedElevation = 0.dp,
+                    disabledElevation = 0.dp
+                ),
+                textSize = 16
             ),
-            textSize = 16
-        ),
-        onClick = onClick
-    )
+            onClick = onClick
+        )
+    }
 }
 
 

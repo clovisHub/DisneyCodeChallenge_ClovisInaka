@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">DisneyCodeChallenge_ClovisInaka</string>
-    <string name="title_activity_confirm">ConfirmActivity</string>
+    <string name="title_activity_confirm">Confirm Selection</string>
+    <string name="select_guest_toolbar_tile">Select Guest</string>
+    <string name="select_guest_continue_btn">Continue</string>
+    <string name="title_activity_confirmation">ConfirmationActivity</string>
+    <string name="conflict_screen">Conflict Screen</string>
 </resources>

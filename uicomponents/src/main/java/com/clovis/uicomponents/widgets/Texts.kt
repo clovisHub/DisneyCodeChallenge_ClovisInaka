@@ -1,5 +1,6 @@
 package com.clovis.uicomponents.widgets
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -33,7 +34,9 @@ import com.clovis.uicomponents.ui.theme.headerTitleColor
 fun HeaderTextFieldSize18(title: String? = null, onTextChange: (TextLayoutResult) -> Unit = {}) {
 
     if (!title.isNullOrBlank()) {
-        Row(modifier = Modifier)
+        Row(modifier = Modifier
+            .fillMaxWidth()
+            .background(Color.White))
         {
             CreateText(
                 uiTextObject = UITextObject(
@@ -69,15 +72,16 @@ fun ToolbarTexts(title: String) {
 }
 
 @Composable
-fun ErrorTextForFooters(value: String? = null) {
+fun ErrorTextForFooterTitles(value: String? = null) {
     val footer by remember { mutableStateOf(value) }
     if (value.isNullOrBlank().not()) {
         CreateText(
             uiTextObject = UITextObject(
-                modifier = Modifier.padding(6.dp, 0.dp, 0.dp, 0.dp),
+                modifier = Modifier.padding(16.dp, 16.dp, 63.dp, 0.dp),
                 text = footer ?: "",
                 fontSize = 14,
-                color = footerColor,
+                letterSpacing = 0.35.sp,
+                color = Color.White,
                 maxLines = 1,
                 onTextLayout = {}
             )
@@ -86,8 +90,27 @@ fun ErrorTextForFooters(value: String? = null) {
 }
 
 @Composable
-fun CheckboxTexts(value: String? = null) {
+fun ErrorTextForFooters(value: String? = null) {
     val footer by remember { mutableStateOf(value) }
+    if (value.isNullOrBlank().not()) {
+        CreateText(
+            uiTextObject = UITextObject(
+                modifier = Modifier.padding(16.dp, 5.dp, 63.dp, 0.dp),
+                text = footer ?: "",
+                fontSize = 14,
+                lineHeight = 15.sp,
+                letterSpacing = 0.35.sp,
+                color = Color.White,
+                maxLines = 2,
+                onTextLayout = {}
+            )
+        )
+    }
+}
+
+@Composable
+fun CheckboxTexts(value: String? = null) {
+
     if (value.isNullOrBlank().not()) {
         CreateText(
             uiTextObject = UITextObject(

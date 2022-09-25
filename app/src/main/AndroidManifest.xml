@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.clovis.disneycodechallenge_clovisinaka">
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,10 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DisneyCodeChallenge_ClovisInaka"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
         <activity
-            android:name=".ui.ui.views.SelectGuestActivity"
+            android:name=".ConfirmationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_confirmation"
+            android:theme="@style/Theme.DisneyCodeChallenge_ClovisInaka" />
+        <activity
+            android:name=".SelectGuestActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.DisneyCodeChallenge_ClovisInaka">
@@ -27,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.views.ConfirmActivity"/>
+        <activity android:name=".ConfirmActivity" />
     </application>
 
 </manifest>

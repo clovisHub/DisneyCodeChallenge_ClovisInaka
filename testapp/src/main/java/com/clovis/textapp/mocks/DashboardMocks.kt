@@ -53,7 +53,7 @@ fun getDashBoardFakeData(): List<DashBoardContent> {
     dashboardFakeData.add(DashBoardContent("Junior Thomas", ContentType.PERSON, 2))
 
 
-    return sortList(dashboardFakeData)
+    return dashboardFakeData
 }
 
 private fun sortList(list: List<DashBoardContent>): List<DashBoardContent> {
