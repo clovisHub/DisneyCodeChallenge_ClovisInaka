@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.clovis.textapp">
+    package="com.clovis.testapp">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DisneyCodeChallenge_ClovisInaka">
         <activity
-            android:name=".SampleActivity"
+            android:name="com.clovis.testapp.SampleActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.DisneyCodeChallenge_ClovisInaka">

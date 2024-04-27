@@ -1,4 +1,4 @@
-package com.clovis.textapp.ui.theme
+package com.clovis.testapp.ui.theme
 
 import android.app.Activity
 import androidx.compose.foundation.isSystemInDarkTheme

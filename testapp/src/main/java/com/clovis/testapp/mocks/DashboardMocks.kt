@@ -1,4 +1,4 @@
-package com.clovis.textapp.mocks
+package com.clovis.testapp.mocks
 
 
 fun getDashBoardFakeData(): List<DashBoardContent> {
