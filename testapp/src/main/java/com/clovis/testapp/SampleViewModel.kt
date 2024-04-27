@@ -1,9 +1,9 @@
-package com.clovis.textapp
+package com.clovis.testapp
 
 
 import androidx.lifecycle.ViewModel
-import com.clovis.textapp.mocks.DashBoardContent
-import com.clovis.textapp.mocks.getDashBoardFakeData
+import com.clovis.testapp.mocks.DashBoardContent
+import com.clovis.testapp.mocks.getDashBoardFakeData
 
 class SampleViewModel : ViewModel() {
 

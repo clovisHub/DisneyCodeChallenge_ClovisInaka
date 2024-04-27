@@ -1,4 +1,4 @@
-package com.clovis.textapp
+package com.clovis.testapp
 
 import org.junit.Test
 

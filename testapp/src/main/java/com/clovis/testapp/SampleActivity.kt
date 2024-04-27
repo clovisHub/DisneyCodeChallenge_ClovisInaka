@@ -1,4 +1,4 @@
-package com.clovis.textapp
+package com.clovis.testapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -19,8 +19,8 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.clovis.textapp.ui.theme.DisneyCodeChallenge_ClovisInakaTheme
-import com.clovis.textapp.ui.theme.parts.SetDashBoardContentList
+import com.clovis.testapp.ui.theme.DisneyCodeChallenge_ClovisInakaTheme
+import com.clovis.testapp.ui.theme.parts.SetDashBoardContentList
 import com.clovis.uicomponents.mixedwidgets.CreateFooterError
 import com.clovis.uicomponents.mixedwidgets.CreateFooterWithIcon
 import com.clovis.uicomponents.mixedwidgets.TextWithLeftCheckBox
@@ -53,9 +53,10 @@ class SampleActivity : ComponentActivity() {
 
                             }
                         }
-                    ) {
+                    ) { padding ->
                         Column(
                             Modifier
+                                .padding(padding)
                                 .fillMaxSize(),
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.Bottom

@@ -5,15 +5,15 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import com.clovis.disneycodechallenge_clovisinaka.views.CreateConflictScreen
 import com.clovis.disneycodechallenge_clovisinaka.views.SelectGuestViewScaffold
 import com.clovis.uicomponents.ui.theme.DisneyCodeChallenge_ClovisInakaTheme
 import com.clovis.uicomponents.ui.theme.screenBackgroundColor
+import com.clovis.uicomponents.widgets.Demo_SwitchComponent
+import com.clovis.uicomponents.widgets.Demo_SwitchComponent2
 
 class SelectGuestActivity : ComponentActivity() {
     private val viewModel by lazy {
@@ -47,3 +47,17 @@ class SelectGuestActivity : ComponentActivity() {
     }
 }
 
+@Preview
+@Composable
+fun displayComponent() {
+    Demo_SwitchComponent()
+}
+
+
+@Preview
+@Composable
+fun displayComponent2() {
+    Surface() {
+        Demo_SwitchComponent2()
+    }
+}

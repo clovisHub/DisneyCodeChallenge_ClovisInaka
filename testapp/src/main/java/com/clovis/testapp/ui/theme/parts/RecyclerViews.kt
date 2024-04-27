@@ -1,16 +1,10 @@
-package com.clovis.textapp.ui.theme.parts
+package com.clovis.testapp.ui.theme.parts
 
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import com.clovis.textapp.SampleViewModel
-import com.clovis.textapp.mocks.ContentType
-import com.clovis.textapp.mocks.DashBoardContent
+import com.clovis.testapp.SampleViewModel
+import com.clovis.testapp.mocks.ContentType
 import com.clovis.uicomponents.mixedwidgets.CreateFooterWithIcon
 import com.clovis.uicomponents.mixedwidgets.TextWithLeftCheckBox
 import com.clovis.uicomponents.widgets.HeaderTextFieldSize18
